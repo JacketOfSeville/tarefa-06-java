@@ -54,7 +54,7 @@ public class Busca {
             corresponde &= especialista.getLocalizacao().equalsIgnoreCase(filtros.getLocalizacao());
         }
         if (filtros.getDistancia() > 0) {
-            // Aqui pode-se implementar uma lógica de distância, mas estou usando um exemplo simples
+            // TODO: Implementar função de calculo de distancia
             corresponde &= especialista.getPreco() <= filtros.getDistancia(); // Exemplo usando preço como distância
         }
         if (filtros.getTipoServico() != null && !filtros.getTipoServico().isEmpty()) {
